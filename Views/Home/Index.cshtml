@@ -3,34 +3,114 @@
 }
 
 
+
 <body class="text-dark">
-	<div class="text-center">
-	<h1 class="display-4">Documentação do projeto Elevador</h1>
-	<p><a href="https://github.com/Willian-Guerreiro/ProjetoElevador_Documentacao">Repositório oficial do projeto</a>.</p>
+    <div class="text-center">
+        <h1 class="display-4">Documentação do projeto Elevador</h1>
+        <p><a href="https://github.com/Willian-Guerreiro/ProjetoElevador_Documentacao">Repositório oficial do projeto</a>.</p>
+        
+        <div class="card">
+            <img src="assets/elevador_view.jpg" style="width:100%">
+        </div>
 
-	<div class = "card">
-		<img src="assets/elevador_view.jpg" style="width:100%">
-	</div>
+        <hr />
 
-	<hr/>
+        <h2 align="left">Descrição do funcionamento</h2>
+        <p align="left">
+            O dispositivo elevador possui a função de navegar entre os andares de um prédio
+            executando um movimento vertical de subida ou descida. Neste projeto, o elevador
+            é parametrizado inicialmente com:
+        </p>
+        <ul>
+            <li align="left">Capacidade máxima de pessoas no elevador</li>
+            <li align="left">Quantidade máxima de andares do prédio</li>
+        </ul>
 
-	<h2 align="left">Descrição do funcionamento</h2>
-	<p align="left">O dispositivo elevador possui a função de navegar entre os andares de um prédio
-					executando um movimento vertical de subida ou descida. Neste projeto, o elevador
-					é parametrizado inicialmente com:</p>
-	<ul>
-		<li align="left">Capacidade máxima de pessoas no elevador</li>
-		<li align="left">Quantidade máxima de andares do prédio</li>
-	</ul>
+        <p align="left">Um usuário, por sua vez, pode executar as seguintes ações:</p>
 
-	<p align="left">Um usuário, por sua vez, pode executar as seguintes ações:</p>
+        <ul>
+            <li align="left">Entrar no elevador</li>
+            <li align="left">Sair do elevador</li>
+            <li align="left">Subir 1 andar</li>
+            <li align="left">Descer 1 andar</li>
+        </ul>
 
-	<ul>
-		<li align="left">Entrar no elevador</li>
-		<li align="left">Sair do elevador</li>
-		<li align="left">Subir 1 andar</li>
-		<li align="left">Descer 1 andar</li>
-	</ul>
+        <h2 align="left">Arquitetura do sistema</h2>
 
-</div>
+        <p align="left">
+            O sistema foi concebido de acordo com o padrão de projetos MVC - Model, View e Controller.
+            A figura abaixo ilustra como estes elementos se relacionam.
+        </p>
+
+        <img src="assets/mvc.png" style="width:600px;height:274px;">
+
+        <hr />
+
+        <p align="left">
+            Neste padrão de projetos, os elementos citados desempenham os seguintes papéis:
+        </p>
+
+        <ul>
+            <li align="left">
+                Model: Sua responsabilidade é gerenciar e controlar a forma como os dados se comportam por meio das
+                funções, lógica e regras de negócios estabelecidas;
+            </li>
+
+            <li align="left">View: Responsável por apresentar as informações de forma visual ao usuário;</li>
+
+            <li align="left">Controller: Responsável por intermediar as requisições enviadas pela camada View com as respostas fornecidas pela Model.</li>
+
+        </ul>
+
+ 
+
+        <p align="left">
+            Desta maneira, foram elaboradas 3 classes distribuídas em estruturas de pastas que buscam representar da melhor maneira a organização do padrão MVC.
+        </p>
+
+
+        <img src="assets/solution.png">
+
+        <hr />
+
+        <p align="justify">
+            A partir da representação das classes, é possível notar seu métodos e atributos. Para a classse elevador (Model), foram reservados os atributos AndarAtual,
+            Capacidade, NumeroDeAndares e NumeroDePessoas. Estes atributos contribuem com o modelo virtual do objeto elevador. Já os métodos
+            foram desenvolvidos de acordo com as funcionalidades do elevador, sendo descritos como: Descer, Subir, Entrar, Sair e Inicializar. A figura abaixo ilustra as
+            classes desenvolvidas, seus métodos e atributos.
+        </p>
+ 
+        <img src="assets/ClassDiagram1.png">
+
+        <hr />
+
+        <p align="justify">
+            Ainda com respeito à imagem acima, nota-se que o elemento de View possui função limitada e restrita à visualização. Além disso, o elemento controller possui conexão
+            com o elemento de View e com o elemento de Model, além de possuir um método que inicializa todo o sistema.
+        </p>
+
+
+        <h2 align="left">Funcionamento da aplicação</h2>
+
+        <p align="justify">
+            Nesta seção serão demonstradas as funcionalidades básicas da aplicação, bem como seu layout, a forma de interação com o usuário e as mensagens de feedback emitidas pelo
+            sistema. Para este aplicativo, o elevador foi parametrizado para suportar no máximo <b>4 pessoas</b>, estando alocado em um prédio de <b>10 andares</b>, sem contar com o térreo.
+        </p>
+
+        <img src="assets/app_view.png">
+
+        <hr />
+
+        <p align="justify">
+            Teste do sistema
+        </p>
+
+
+        <div class="card">
+            <img src="assets/all-app.gif">
+        </div>
+
+        <hr />
+
+    </div>
 </body>
